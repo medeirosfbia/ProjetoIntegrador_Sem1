@@ -1,18 +1,4 @@
-:root{
-    --primary-color: #234882;
-    --secondary-color: #FFD75E;
-    --menu-color: #FFEDE0;
-    --background-color:#F4F4F4;
-    --border:#0000008c;
-    --search:#fff;
-    --register:#fff;
-}
 
-body{
-    margin: 0;
-    padding: 0;
-    background-color: var(--background-color);
-}
 
 header{
     display: flex;
