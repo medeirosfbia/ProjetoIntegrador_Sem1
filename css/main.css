@@ -23,7 +23,7 @@ main {
 }
 
 .menu p{
-    background-color: var(--button-menu-color);
+    background-color: var(--primary-color);
     color: var(--text-menu);
     font-size: 16px;
     border-radius: 8px;
@@ -50,7 +50,7 @@ main {
 
 .toggle-header {
     padding: 15px;
-    background-color: var(--button-menu-color);
+    background-color: var(--primary-color);
     color: var(--text-menu);
     text-align: center;
     cursor: pointer;
@@ -77,7 +77,7 @@ main {
 .toggle-content li {
     padding: 15px;
     border-top: 1px solid var(--border);
-    background-color: var(--secondary-color);
+    background-color: var(--button-menu-color);
 }
 
 
