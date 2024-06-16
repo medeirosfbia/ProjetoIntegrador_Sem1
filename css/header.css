@@ -1,7 +1,8 @@
+@import 'global.css';
 
-
-header{
+header {
     display: flex;
+    justify-content: space-between; /* Alinha os itens com espaço entre eles */
     background-color: var(--primary-color);
     align-items: center;
     border-radius: 0 0 15px 15px; /* Apenas os cantos inferiores arredondados */
@@ -52,9 +53,8 @@ header{
 }
 
 .button-container{
-    display: space-between;
+    display: flex;
     align-items: center;
-    margin-left: 10px;
 }
 
 #login-button{
@@ -63,13 +63,8 @@ header{
     border-radius: 15px;
     padding: 5px 10px;
     font-size: 16px;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-weight: bold;
-    text-shadow:
-    -1px -1px 0 var(--secondary-color),
-    1px -1px 0 var(--secondary-color),
-    -1px 1px 0 var(--secondary-color),
-    1px 1px 0 var(--secondary-color);
     cursor: pointer;
     margin-right: 25px;
     margin-left: 25px;

@@ -6,10 +6,19 @@
     --border:#0000008c;
     --search:#fff;
     --register:#fff;
+    --text-menu:#fff;
+    --text-border: #000;
 }
 
-body{
+#content{
+    background-color: var(--menu-color);
+    display: flex;
+    overflow-y: hidden;
+}
+
+body,html{
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
+    overflow-y: hidden;
 }

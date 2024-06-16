@@ -1,0 +1,128 @@
+@import 'global.css';
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Garante que o main ocupe pelo menos toda a altura da viewport */
+    box-sizing: border-box; /* Inclui o padding e a borda no cálculo da altura */
+    
+}
+
+/* Menu */
+.menu {
+    background-color: var(--menu-color); /* Mesmo fundo que o header */
+    height: 100%;
+    width: 200px;
+    padding: 5px 15px;
+    margin: 0;
+    border: 2.5px solid var(--border); /* Borda preta com 50% de transparência */
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    box-sizing: border-box; /* Inclui o padding e a borda no cálculo da altura */
+}
+
+.menu p{
+    background-color: var(--primary-color);
+    color: var(--text-menu);
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    margin: 5px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.menu p:hover{
+    filter: brightness(0.8); /* Reduz o brilho em 20% para escurecer a cor */
+    cursor: pointer;
+}
+
+.toggle-list {
+    max-width: 600px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+    overflow: hidden;
+}
+
+.toggle-header {
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: var(--text-menu);
+    cursor: pointer;
+    border-bottom: 1px solid var(--border);
+}
+
+.toggle-header:hover {
+    filter: brightness(0.8); /* Reduz o brilho em 20% para escurecer a cor */
+}
+
+.toggle-content {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: var(--text-menu);
+    list-style-type: none;
+    display: none; /* Esconde o conteúdo por padrão */
+    border-bottom: 1px solid var(--border);
+}
+
+
+
+.toggle-content li {
+    padding: 15px;
+    border-top: 1px solid var(--border);
+    background-color: var(--secondary-color);
+}
+
+
+.toggle-content li:hover {
+    filter: brightness(0.8); /* Reduz o brilho em 20% para escurecer a cor */
+    cursor: pointer;
+}
+
+.toggle-content li:first-child {
+    border-top: none;
+}
+
+.menu button{
+    background-color: var(--secondary-color);
+    color: var(--text-norder);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 0;
+    margin-top: 5px;
+    width: 100%;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.menu button:hover{
+    filter: brightness(0.8); /* Reduz o brilho em 20% para escurecer a cor */
+}
+
+
+
+
+
+/* Rankingns */
+.rank{
+ align-items: flex-end;
+ border:2.5px solid var(--border);
+}
+
+
+/* Conteudo principal */
+.main-content{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-left: 25px;
+    margin-right: 25px;
+    border: 1px solid var(--border);
+}
