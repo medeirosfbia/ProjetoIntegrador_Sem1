@@ -1,0 +1,106 @@
+:root{
+    --primary-color: #234882;
+    --secondary-color: #FFD75E;
+    --menu-color: #FFEDE0;
+    --background-color:#F4F4F4;
+    --border:#0000008c;
+    --search:#fff;
+    --register:#fff;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+header{
+    display: flex;
+    background-color: var(--primary-color);
+    align-items: center;
+    border-radius: 0 0 15px 15px; /* Apenas os cantos inferiores arredondados */
+    border: 1.5px solid var(--border); /* Borda preta com 50% de transparência */
+    border-top: none; /* Remove a borda superior */
+    padding: 15px 20px; /* Aumenta o padding para aumentar a altura */
+    text-align: center;
+    height: 100px; /* Define uma altura específica */
+    overflow: hidden; /* Garante que o conteúdo extra não altere o tamanho */
+    box-sizing: border-box; /* Inclui o padding e a borda no cálculo da altura */
+}
+
+#header-logo{
+    align-items: flex-start;
+    width: 55px;
+    height: 55px;
+}
+
+.search-container{
+    position: relative;
+    flex-grow: 1; /* Ocupa o espaço restante */
+    min-width: 400px; /* Limita a largura máxima do campo de pesquisa */
+    max-width: 100%;
+    height: 27.5px;
+    background-color: var(--search);
+    border-radius: 15px;
+    margin-left: 25px;
+    display: flex;
+    
+}
+
+.search-container img{
+    width: auto;
+    height: auto;
+}
+
+#search-input{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    border-radius: 15px;
+    box-sizing: border-box; /* Inclui o padding e a borda no cálculo da altura */
+    border: none;
+}
+
+#search-input:focus{
+    outline: none;
+}
+
+.button-container{
+    display: space-between;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#login-button{
+    background-color:transparent;
+    border: var(--secondary-color) solid 2px;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-shadow:
+    -1px -1px 0 var(--secondary-color),
+    1px -1px 0 var(--secondary-color),
+    -1px 1px 0 var(--secondary-color),
+    1px 1px 0 var(--secondary-color);
+    cursor: pointer;
+    margin-right: 25px;
+    margin-left: 25px;
+    
+}
+
+#register-button{
+    background-color: var(--secondary-color);
+    color: var(--register);
+    text-shadow:
+    -1px -1px 0 var(--border),
+    1px -1px 0 var(--border),
+    -1px 1px 0 var(--border),
+    1px 1px 0 var(--border);
+    border: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
