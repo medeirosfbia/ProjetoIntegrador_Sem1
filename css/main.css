@@ -76,6 +76,12 @@ main {
 
 .toggle-content li {
     padding: 15px;
+    color: var(--text-menu);
+    text-shadow:
+    -1px -1px 0 var(--text-border),
+    1px -1px 0 var(--text-border),
+    -1px 1px 0 var(--text-border),
+    1px 1px 0 var(--text-border);
     border-top: 1px solid var(--border);
     background-color: var(--button-menu-color);
 }

@@ -75,10 +75,10 @@ header {
     background-color: var(--secondary-color);
     color: var(--register);
     text-shadow:
-    -1px -1px 0 var(--border),
-    1px -1px 0 var(--border),
-    -1px 1px 0 var(--border),
-    1px 1px 0 var(--border);
+    -1px -1px 0 var(--text-border),
+    1px -1px 0 var(--text-border),
+    -1px 1px 0 var(--text-border),
+    1px 1px 0 var(--text-border);
     border: none;
     border-radius: 15px;
     padding: 5px 10px;
