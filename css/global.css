@@ -8,11 +8,12 @@
     --register:#fff;
     --text-menu:#fff;
     --text-border: #000;
-    --button-menu-color: #234782c9;
+    --button-menu-color: #234782d8;
     --button-color:#FFD75E;
 }
 
 #content{
+    position: static;
     background-color: var(--menu-color);
     display: flex;
     overflow-y: hidden;

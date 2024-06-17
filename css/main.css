@@ -2,7 +2,7 @@
 
 main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     height: 100vh; /* Garante que o main ocupe pelo menos toda a altura da viewport */
     box-sizing: border-box; /* Inclui o padding e a borda no cálculo da altura */
     
@@ -12,7 +12,7 @@ main {
 .menu {
     background-color: var(--menu-color); /* Mesmo fundo que o header */
     height: 100%;
-    width: 200px;
+    width: 400px;
     padding: 5px 15px;
     margin: 0;
     border: 2.5px solid var(--border); /* Borda preta com 50% de transparência */
@@ -117,9 +117,56 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    align-items: flex-end;
-    border:2.5px solid var(--border);
+    width: 600px;
+}
+
+.ranking{
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    background-color: var(--menu-color);
+    height: auto;
+    max-width: 70%;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.ranking h2{
+    margin: 0px;
+    padding: 0px;
+    font-size: large;
+    text-align: center;
+}
+
+.ranking ol{
+    margin: 0px;
+    padding: 0px;
+    list-style-position: inside;
+    text-align: justify;
+
+}
+.ranking li{
+    margin: 0px;
+    padding: 0px;
+    list-style-position: inside;
+}
+
+.rank button{
+    background-color: var(--secondary-color);
+    color: var(--text-border);
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 0;
+    margin-top: 2.5px;
+    width: 150px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.rank button:hover{
+    filter: brightness(0.8); /* Reduz o brilho em 20% para escurecer a cor */
 }
 
 
@@ -133,4 +180,6 @@ main {
     margin-left: 25px;
     margin-right: 25px;
     border: 1px solid var(--border);
+    padding: 0px;
+    margin: 0px;
 }
