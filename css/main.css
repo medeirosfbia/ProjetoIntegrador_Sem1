@@ -5,8 +5,45 @@ main {
     flex-direction: row;
     height: 100vh; /* Garante que o main ocupe pelo menos toda a altura da viewport */
     box-sizing: border-box; /* Inclui o padding e a borda no cálculo da altura */
-    
 }
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .menu {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .main-content {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .rank {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .menu {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .main-content {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .rank {
+        width: 100%;
+    }
+}
+
 
 /* Menu */
 .menu {

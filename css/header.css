@@ -15,6 +15,25 @@ header {
     box-sizing: border-box; /* Inclui o padding e a borda no cálculo da altura */
 }
 
+@media (max-width: 576px) {
+    header {
+        flex-direction: column;
+        height: auto; /* Permite que o header cresça conforme necessário */
+    }
+
+    .button-container {
+        flex-direction: column;
+        margin: 10px 0; /* Adiciona espaço entre os botões e outros elementos */
+        width: 100%;
+    }
+
+    .search-container {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+
 #header-logo{
     align-items: flex-start;
     width: 55px;

@@ -25,3 +25,64 @@ body,html{
     background-color: var(--background-color);
     overflow-y: hidden;
 }
+
+/* Media query para dispositivos médios (tablets) */
+@media (max-width: 768px) {
+    .search-container {
+        min-width: 200px; /* Diminui o tamanho mínimo em telas menores */
+    }
+
+    #login-button, #register-button {
+        font-size: 14px; /* Ajusta o tamanho da fonte */
+        padding: 3px 5px; /* Ajusta o padding */
+    }
+}
+
+/* Media query para dispositivos pequenos (smartphones) */
+@media (max-width: 576px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: auto; /* Permite que o header cresça conforme necessário */
+        padding: 10px;
+    }
+
+    .search-container {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .button-container {
+        margin: 10px 0; /* Adiciona espaço entre os botões e outros elementos */
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .menu {
+        width: 100%; /* Faz o menu ocupar toda a largura */
+        height: auto; /* Permite que o menu cresça conforme necessário */
+    }
+
+    .menu p, .menu button {
+        width: 100%; /* Faz os elementos do menu ocuparem toda a largura */
+        text-align: center;
+    }
+
+    .toggle-list {
+        max-width: 100%; /* Faz a lista toggle ocupar toda a largura */
+    }
+
+    .rank {
+        width: 100%; /* Faz o ranking ocupar toda a largura */
+    }
+
+    .ranking {
+        max-width: 100%; /* Faz os elementos de ranking ocuparem toda a largura */
+    }
+
+    .main-content {
+        margin: 10px 0; /* Ajusta a margem */
+        width: 100%; /* Faz o conteúdo principal ocupar toda a largura */
+    }
+}
