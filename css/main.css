@@ -7,44 +7,6 @@ main {
     box-sizing: border-box; /* Inclui o padding e a borda no cálculo da altura */
 }
 
-@media (max-width: 768px) {
-    main {
-        flex-direction: column;
-    }
-
-    .menu {
-        width: 100%;
-        height: auto;
-        padding: 10px;
-    }
-
-    .main-content {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .rank {
-        width: 100%;
-    }
-}
-
-@media (max-width: 576px) {
-    .menu {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .main-content {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .rank {
-        width: 100%;
-    }
-}
-
-
 /* Menu */
 .menu {
     background-color: var(--menu-color); /* Mesmo fundo que o header */
@@ -214,9 +176,167 @@ main {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-left: 25px;
-    margin-right: 25px;
-    border: 1px solid var(--border);
+    height: auto;
     padding: 0px;
     margin: 0px;
+    overflow-y: auto;
 }
+
+/* Ocultando o scrollbar vertical */
+.main-content::-webkit-scrollbar {
+    width: 0; /* largura do scrollbar */
+    height: 0; /* altura do scrollbar */
+}
+
+.main-content .post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-left: none;
+    border-right: none;
+    border-radius: 20px;
+    background-color: var(--background-color);
+}
+
+.main-content .post .header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 10px;
+    padding: 0px;
+}
+
+.main-content .post .header p{
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.main-content .post .header img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.main-content .post .header .tpoint{
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+}
+
+.main-content .post .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+    padding: 0px;
+}
+
+.main-content .post .content h4{
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+    margin: 2.5px;
+}
+
+.main-content .post .content p{
+    width: 100%;
+    height: auto;
+    margin: 5px;
+}
+
+.main-content .post .interaction{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-content .post .interaction .like{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: auto;
+    margin: 0px;
+    margin-right: 0px;
+    margin-bottom: 2.5px;
+    margin-left: 3.5px;
+    padding: 5px;
+    border: 1px solid var(--border);
+    border-radius: 15px;
+}
+
+.main-content .post .interaction .like img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.main-content .post .interaction .like p{
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.main-content .post .interaction .comment{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: auto;
+    margin-right: 0px;
+    margin-bottom: 2.5px;
+    margin-left: 15px;
+    padding: 5px;
+    border: 1px solid var(--border);
+    border-radius: 15px;
+}
+
+.main-content .post .interaction .comment img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.main-content .post .interaction .comment p{
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.main-content .moreM{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin: 25px;
+    padding: 10px;
+}
+
+.main-content .moreM h1{
+    color: var(--text-border);
+    text-shadow:
+    -1px -1px 0 var(--text-border),
+    1px -1px 0 var(--text-border),
+    -1px 1px 0 var(--text-border),
+    1px 1px 0 var(--text-border);
+    border-radius: 8px;
+    padding: 10px 0;
+    margin-top: 2.5px;
+    width: 100%;
+    font-weight: bolder;
+}
+
+
+
+
+
