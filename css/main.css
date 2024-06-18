@@ -95,6 +95,11 @@ main {
     border-top: none;
 }
 
+.menu a{
+    text-decoration: none;
+    color: var(--text-menu);
+}
+
 .menu button{
     background-color: var(--secondary-color);
     color: var(--text-border);
@@ -113,10 +118,11 @@ main {
 
 /* Rankingns */
 .rank{
-    display: flex;
+    display: fixed;
     flex-direction: column;
     align-items: center;
     width: 600px;
+    float: right;
 }
 
 .ranking{
@@ -174,7 +180,6 @@ main {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
-    align-items: center;
     width: 100%;
     height: auto;
     padding: 0px;

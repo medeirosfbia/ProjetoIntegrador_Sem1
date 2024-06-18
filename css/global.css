@@ -14,15 +14,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-#content{
-    position: static;
-    background-color: var(--menu-color);
-    display: flex;
-    overflow-y: hidden;
-    font-family: int;
-    font-family: "Inter", sans-serif;
-    height: 100vh;
-}
 
 body,html{
     margin: 0;
@@ -34,3 +25,6 @@ body,html{
     font-family: "Inter", sans-serif;
 }
 
+.menu .button-select {
+    background-color: var(--button-menu-color);
+}
