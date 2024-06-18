@@ -19,7 +19,6 @@
     background-color: var(--menu-color);
     display: flex;
     overflow-y: hidden;
-    font-family: int;
     font-family: "Inter", sans-serif;
     height: 100vh;
 }
