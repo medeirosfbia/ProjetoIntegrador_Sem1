@@ -14,6 +14,8 @@
     border-radius: 50px;
     margin: auto;
     color: white;
+    display: block;
+    align-items: center;
     
 }
 
@@ -25,7 +27,7 @@
 }
 
 .darken .darken-box .darken-text{
-    margin: 30px 50px -10px 50px;
+    margin: 10px 50px -10px 50px;
     font-size: medium;
 }
 
@@ -35,13 +37,10 @@
     font-size: large;
     text-align: center;
     cursor: pointer;
+    font-weight: 200;
 }
 .darken .darken-box .X:hover{
-    float: right;
-    margin: 30px 30px 0 0;
-    font-size:  x-large;
-    text-align: center;
-    cursor: pointer;
+    font-weight: 600;
 }
 
 .darken-icon{
@@ -58,18 +57,16 @@
 
 .darken-input{
     background-color: transparent;
-    color: rgb(240, 240, 240);
     font-size: x-large;
     margin-left: 10px;
     border: 0;
 }
+.darken-input::placeholder{
+    color: rgb(179, 179, 179);
+}
 .darken-input:focus{
     background-color: transparent;
-    color: white;
-    margin-left: 10px;
-    font-size: 27px;
 }
-
 .darken-input:focus::placeholder{
     color: white;
 }
@@ -102,21 +99,25 @@
     width: auto;
     border-radius: 50px;
     padding-inline: 15%;
+    margin-top: 2rem;
+    
 
 }
 .darken-button:hover{
     font-size: 27px;
     padding-inline: 20%;
-
+    background-color: #FFD75E;
+    color: black;
 }
 
 .darken-small-button{
     background-color: #FFD75E;
-    display: inline-block;
+
     font-weight: 400;
     text-transform: none;
     font-size: medium;
     width: auto;
+    margin-top: 0;
     margin-left: -30px;
     text-align: center;
     border-radius: 50px;
@@ -137,13 +138,23 @@
     margin-left: 50px;
 }
 
+/* CADASTRAR */
+.checkbox{
+    margin-right: -2rem;
+    margin-bottom: -1rem;
+}
+.checkbox:checked{
+    background-color: #000000f0;
+}
+
+.bottom{
+    display: flex;
+
+    margin-top: 2.5rem;
+}
+
+
 
 .transition{
     transition: 0.2s;
 }
-.notransition {
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -o-transition: none !important;
-    transition: none !important;
-  }

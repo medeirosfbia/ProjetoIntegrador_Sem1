@@ -13,6 +13,14 @@ function LoginVisible(){
     document.getElementById("login-content").classList.add("visible")
     document.title = "LogQuest | Log-in"
 }
+function SignInVisible(){
+    document.getElementById("signin-content").style.visibility = 'visible'
+    document.getElementById("signin-content").classList.add("visible")
+    document.title = "LogQuest | Sign-in"
+}
+
+
+
 function DarkenHidden(site){
     var els = document.getElementsByClassName("transition");
     
