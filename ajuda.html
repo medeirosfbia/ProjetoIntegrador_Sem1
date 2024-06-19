@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="shortcut icon" href="./img/LogQuest.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <script src="bootstrap/js/bootstrap.js"></script>
+  <script src="./js/toggleList.js"></script>
+
+  <!-- LOGIN/SIGNIN -->
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+  <script src="./bootstrap/js/bootstrap.js"></script>
+  <link rel="stylesheet" href="./css/login.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="js/darkScreen.js"></script>
+
+  <title>LogQuest | Ajuda</title>
+</head>
+
+<body>
+  
+  <div id="login-content" class="darken">
+    <div class="darken-box">
+        <p class="h5 X transition" onclick="DarkenHidden(Title('r'))">X</p>
+        <h1 class="display-6 darken-title">Entre</h1>
+        <p class="lead darken-text">Entrar permite que você curta e comente em outras postagens</p>
+        <form action="">
+        <div class="darken-form">
+            <span class="input-group-text darken-icon" id="basic-addon1">@
+            <input type="email" class="form-control transition darken-input" placeholder="Digite seu email: *" aria-label="Username" aria-describedby="basic-addon1" required tabindex="1"></span>
+        </div>
+        <div class="darken-form">
+            <span class="input-group-text darken-icon" id="basic-addon1"><i class="bi bi-lock"></i>
+            <input type="password" class="form-control transition darken-input" placeholder="Digite sua senha: *" aria-label="Username" aria-describedby="basic-addon1" required tabindex="1"></span>
+        </div>
+        <p class="link transition" id="forgotPassword">Esqueci minha senha</p>
+        <button type="submit" class="btn btn-lg transition darken-button ">Acessar</button>
+        </form>
+        <div class="bottom">
+            <p class="darken-text darken-inline">Caso você não possua conta: </p>
+            <button type="button" onclick="DarkenHidden(Title('r')); SignInVisible()" class="btn transition darken-button darken-small-button">Cadastre-se</button>
+        </div>
+
+    </div>
+</div>
+
+<div id="signin-content" class="darken">
+    <div class="darken-box">
+        <p class="h5 X transition" onclick="DarkenHidden(Title('r'))">X</p>
+        <h1 class="display-6 darken-title">Cadastre-se</h1>
+        
+        <div class="darken-form">
+          <input type="checkbox" class="darken-input checkbox" id="btncheck1" autocomplete="off" required>
+          <label class="darken-text" for="btncheck1">Concordo com os <a href="">termos...</a></label>
+        </div>
+        <hr>
+
+        <form action="">
+            <div class="darken-form">
+                <span class="input-group-text darken-icon" id="basic-addon1">@
+                <input type="email" class="form-control transition darken-input" placeholder="Digite seu email: *" aria-label="Username" aria-describedby="basic-addon1" required tabindex="1"></span>
+            </div>
+            <div class="darken-form">
+                <span class="input-group-text darken-icon" id="basic-addon1"><i class="bi bi-lock"></i>
+                <input type="password" class="form-control transition darken-input" placeholder="Digite sua senha: *" aria-label="Username" aria-describedby="basic-addon1" required tabindex="1"></span>
+            </div>
+            
+            <button type="submit"  class="btn btn-lg transition darken-button ">Continuar</button>
+        </form>
+        <div class="bottom">
+            <p class="darken-text darken-inline">Caso você já possua conta: </p>
+            <button type="button" onclick="DarkenHidden(Title('r')); LoginVisible();" class="btn transition darken-button darken-small-button">Entrar</button>
+        </div>
+
+    </div>
+</div>
+  <div class="content">
+    <header>
+      <img id="header-logo" src="./img/LogQuest.png" alt="logo LogQuest">
+      <div class="search-container">
+        <img src="./img/lupa.png" alt="lupa de pesquisa" id="search-img">
+        <input type="text" name="search" id="search-input" placeholder="Buscar no LogQuest">
+      </div>
+      <div class="button-container">
+        <button id="login-button" onclick="Title('w',document.title); LoginVisible();">Entrar</button>
+        <button id="register-button" onclick="Title('w',document.title); SignInVisible();">Cadastrar</button>
+      </div>
+    </header>
+    <main>
+      <div class="menu">
+        <!-- Conteúdo do menu -->
+        <a href="index.html">
+          <p>Página Inicial</p>
+        </a>
+        <a href="">
+          <p>Populares</p>
+        </a>
+        <a href="/">
+          <p class="button-select">Dicas</p>
+        </a>
+        <div class="toggle-list">
+          <div class="toggle-header">Recursos</div>
+          <ul class="toggle-content">
+            <a href="">
+              <li>Sobre</li>
+            </a>
+            <a href="">
+              <li>Anuncie</li>
+            </a>
+            <a href="">
+              <li>Ajuda</li>
+            </a>
+            <a href="">
+              <li>Comunidades</li>
+            </a>
+          </ul>
+          </ul>
+        </div>
+        <button type="button">Baixe o Jogo</button>
+
+      </div>
+
+      <div class="main-content">
+        <h2 class="mt-3 text-center">
+          Dicas/Ajuda
+        </h2>
+
+        <div class="accordion mx-5" id="accordionExample">
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Não consigo jogar o jogo...
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur quas blanditiis, totam odio
+                  aperiam placeat eaque, deleniti unde molestiae excepturi accusamus sint deserunt quisquam optio
+                  debitis eius tenetur dicta nihil.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion mx-5" id="accordionExample">
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Como faço para chegar no rank?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur quas blanditiis, totam odio
+                  aperiam placeat eaque, deleniti unde molestiae excepturi accusamus sint deserunt quisquam optio
+                  debitis
+                  eius tenetur dicta nihil.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion mx-5" id="accordionExample">
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Perdi minha conta, como recupero?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur quas blanditiis, totam odio
+                  aperiam placeat eaque, deleniti unde molestiae excepturi accusamus sint deserunt quisquam optio
+                  debitis
+                  eius tenetur dicta nihil.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion mx-5" id="accordionExample">
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Como faço para criar as fases?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur quas blanditiis, totam odio
+                  aperiam placeat eaque, deleniti unde molestiae excepturi accusamus sint deserunt quisquam optio
+                  debitis
+                  eius tenetur dicta nihil.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion mx-5" id="accordionExample">
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Como me torno um moderador?
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur quas blanditiis, totam odio
+                  aperiam placeat eaque, deleniti unde molestiae excepturi accusamus sint deserunt quisquam optio
+                  debitis
+                  eius tenetur dicta nihil.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion mx-5" id="accordionExample">
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                Onde fica os meus pontos?
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur quas blanditiis, totam odio
+                  aperiam placeat eaque, deleniti unde molestiae excepturi accusamus sint deserunt quisquam optio
+                  debitis
+                  eius tenetur dicta nihil.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion mx-5" id="accordionExample">
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                O jogo é pago?
+              </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur quas blanditiis, totam odio
+                  aperiam placeat eaque, deleniti unde molestiae excepturi accusamus sint deserunt quisquam optio
+                  debitis
+                  eius tenetur dicta nihil.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion mx-5" id="accordionExample">
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                Preciso avaliar a plataforma?
+              </button>
+            </h2>
+            <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur quas blanditiis, totam odio
+                  aperiam placeat eaque, deleniti unde molestiae excepturi accusamus sint deserunt quisquam optio
+                  debitis
+                  eius tenetur dicta nihil.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="moreM">
+          <h1>Carregando mais mensagens</h1>
+        </div>
+
+      </div>
+
+      <nav class="rank navbar sticky-bottom align-items-start text-center">
+        <div class="m-0 p-0">
+          <img class="navbar-brand w-50 m-auto p-3" src="img/LogQuest.png">
+          <h4 class="m-auto">LogQuest</h4>
+          <p class="px-3 py-4">Caso tenha mais alguma dúvida nos contate: <a href="#">suporte.logquest@gmail.com</a></p>
+        </div>
+      </nav>
+
+
+    </main>
+  </div>
+</body>
+
+</html>

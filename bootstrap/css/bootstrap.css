@@ -4,6 +4,12 @@
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+<<<<<<<< HEAD:bootstrap-5.3.3-dist/css/bootstrap.css
+========
+
+@import "/css/global.css";
+
+>>>>>>>> 7d83e2c3e17614e239810bb26000879d369b11df:bootstrap/css/bootstrap.css
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -4580,7 +4586,11 @@ textarea.form-control-lg {
   --bs-accordion-btn-icon-width: 1.25rem;
   --bs-accordion-btn-icon-transform: rotate(-180deg);
   --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+<<<<<<<< HEAD:bootstrap-5.3.3-dist/css/bootstrap.css
   --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23052c65' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+========
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+>>>>>>>> 7d83e2c3e17614e239810bb26000879d369b11df:bootstrap/css/bootstrap.css
   --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
   --bs-accordion-body-padding-x: 1.25rem;
   --bs-accordion-body-padding-y: 1rem;
@@ -4609,8 +4619,13 @@ textarea.form-control-lg {
   }
 }
 .accordion-button:not(.collapsed) {
+<<<<<<<< HEAD:bootstrap-5.3.3-dist/css/bootstrap.css
   color: var(--bs-accordion-active-color);
   background-color: var(--bs-accordion-active-bg);
+========
+  color: var(--text-menu); 
+  background-color: var(--primary-color);
+>>>>>>>> 7d83e2c3e17614e239810bb26000879d369b11df:bootstrap/css/bootstrap.css
   box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
 }
 .accordion-button:not(.collapsed)::after {
@@ -4677,6 +4692,10 @@ textarea.form-control-lg {
 
 .accordion-body {
   padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);
+<<<<<<<< HEAD:bootstrap-5.3.3-dist/css/bootstrap.css
+========
+  background-color: rgba(var(--bs-emphasis-color-rgb), 0.05);
+>>>>>>>> 7d83e2c3e17614e239810bb26000879d369b11df:bootstrap/css/bootstrap.css
 }
 
 .accordion-flush > .accordion-item {

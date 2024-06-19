@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,17 +11,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <script src="bootstrap/js/bootstrap.js"></script>
     <script src="./js/toggleList.js"></script>
 
     <!-- LOGIN/SIGNIN -->
-    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.css">
-    <script src="./bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <script src="./bootstrap/js/bootstrap.js"></script>
     <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="js/darkScreen.js"></script>
  
     <title>LogQuest | Home</title>
 </head>
+
 <body>
 
     <div id="login-content" class="darken">
@@ -94,42 +100,44 @@
         <main>
             <div class="menu">
                 <!-- Conteúdo do menu -->
-                <p>Página Inicial</p>
-                <p>Populares</p>
-                <p>Dicas</p>
+                <a href="/"><p class="button-select">Página Inicial</p></a>
+                <a href=""><p>Populares</p></a>
+                <a href="ajuda.html"><p>Dicas</p></a>
                 <div class="toggle-list">
                     <div class="toggle-header">Recursos</div>
                     <ul class="toggle-content">
-                        <li>Sobre</li>
-                        <li>Anuncie</li>
-                        <li>Ajuda</li>
-                        <li>Comunidades</li>
+                        <a href=""><li>Sobre</li></a>
+                        <a href=""><li>Anuncie</li></a>
+                        <a href=""><li>Ajuda</li></a>
+                        <a href=""><li>Comunidades</li></a>
                     </ul>
                 </div>
                 <button type="button">Baixe o Jogo</button>
             </div>
-            <div class="main-content">
-                    <div class="post">
-                        <div class="header">
-                            <img src="./img/perfil.png" alt="">
-                            <p>Jorginho</p>
-                            <img src="./img/3ponto.png" alt="" class="tpoint">
+            <div class="main-content align-items-center">
+                <div class="post">
+                    <div class="header">
+                        <img src="./img/perfil.png" alt="">
+                        <p>Jorginho</p>
+                        <img src="./img/3ponto.png" alt="" class="tpoint">
                     </div>
-                        <div class="content">
-                            <h4>Como passar de nível mais rápido?</h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis pariatur voluptatibus adipisci perferendis obcaecati repellat ad animi libero dolorum, sapiente tempore illo dolor debitis consequatur praesentium? Officia dolorem explicabo quam?]</p>
+                    <div class="content">
+                        <h4>Como passar de nível mais rápido?</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis pariatur voluptatibus
+                            adipisci perferendis obcaecati repellat ad animi libero dolorum, sapiente tempore illo dolor
+                            debitis consequatur praesentium? Officia dolorem explicabo quam?]</p>
                     </div>
-                        <div class="interaction">
-                            <div class="like">
-                                <img src="./img/like.png" alt="">
-                                <p>2000</p>
-                            </div>
-                            <div class="comment">
-                                <img src="./img/comment.png" alt="">
-                                <p>200</p>
-                            </div>
+                    <div class="interaction">
+                        <div class="like">
+                            <img src="./img/like.png" alt="">
+                            <p>2000</p>
+                        </div>
+                        <div class="comment">
+                            <img src="./img/comment.png" alt="">
+                            <p>200</p>
+                        </div>
                     </div>
-                </div>    
+                </div>
                 <div class="post">
                     <div class="header">
                         <img src="./img/perfil.png" alt="">
@@ -138,7 +146,9 @@
                     </div>
                     <div class="content">
                         <h4>Nova fase de labirinto criadaa!</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis pariatur voluptatibus adipisci perferendis obcaecati repellat ad animi libero dolorum, sapiente tempore illo dolor debitis consequatur praesentium? Officia dolorem explicabo quam?]</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis pariatur voluptatibus
+                            adipisci perferendis obcaecati repellat ad animi libero dolorum, sapiente tempore illo dolor
+                            debitis consequatur praesentium? Officia dolorem explicabo quam?]</p>
                         <img src="img/labirinto.png" alt="">
                     </div>
                     <div class="interaction">
@@ -150,8 +160,8 @@
                             <img src="./img/comment.png" alt="">
                             <p>200</p>
                         </div>
+                    </div>
                 </div>
-                </div> 
                 <div class="post">
                     <div class="header">
                         <img src="./img/perfil.png" alt="">
@@ -160,7 +170,9 @@
                     </div>
                     <div class="content">
                         <h4>Nova fase de labirinto criadaa!</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis pariatur voluptatibus adipisci perferendis obcaecati repellat ad animi libero dolorum, sapiente tempore illo dolor debitis consequatur praesentium? Officia dolorem explicabo quam?]</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis pariatur voluptatibus
+                            adipisci perferendis obcaecati repellat ad animi libero dolorum, sapiente tempore illo dolor
+                            debitis consequatur praesentium? Officia dolorem explicabo quam?]</p>
                         <img src="img/labirinto.png" alt="">
                     </div>
                     <div class="interaction">
@@ -172,14 +184,14 @@
                             <img src="./img/comment.png" alt="">
                             <p>200</p>
                         </div>
+                    </div>
                 </div>
-                </div>   
                 <div class="moreM">
                     <h1>Carregando mais mensagens</h1>
                 </div>
-                
-            </div>  
-            
+
+            </div>
+
             <div class="rank">
                 <div class="ranking">
                     <h2>Ranking Geral</h2>
@@ -213,8 +225,9 @@
                 </div>
                 <button class="">Ver Ranking</button>
             </div>
-            
+
         </main>
     </div>
 </body>
+
 </html>
