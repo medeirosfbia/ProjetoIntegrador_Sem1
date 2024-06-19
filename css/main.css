@@ -11,7 +11,7 @@ main {
 .menu {
     background-color: var(--menu-color); /* Mesmo fundo que o header */
     height: 100%;
-    width: 400px;
+    width: 300px;
     padding: 5px 15px;
     margin: 0;
     border: 2.5px solid var(--border); /* Borda preta com 50% de transparência */
@@ -340,8 +340,6 @@ main {
     width: 100%;
     font-weight: bolder;
 }
-
-
 
 
 
