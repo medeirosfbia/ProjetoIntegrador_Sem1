@@ -10,6 +10,7 @@ function Title(rw, newSite){
 
 function LoginVisible(){
     document.getElementById("login-content").style.visibility = 'visible'
+    document.getElementById("login-content").classList.add("visible")
     document.title = "LogQuest | Log-in"
 }
 function DarkenHidden(site){
@@ -18,7 +19,8 @@ function DarkenHidden(site){
     for(el of els){
         el.classList.remove("transition");
     }
-    document.getElementsByClassName("darken")[0].style.visibility = 'hidden'
+    document.getElementsByClassName("visible")[0].style.visibility = 'hidden'
+    document.getElementsByClassName("visible")[0].classList.remove('visible')
     document.title = site
 
     for(el of els){
