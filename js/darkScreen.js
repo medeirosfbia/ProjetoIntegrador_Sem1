@@ -1,4 +1,4 @@
-window.site = ""
+window.site = Document.title
 function Title(rw, newSite){
     
     if(rw == 'r'){
