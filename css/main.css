@@ -11,7 +11,7 @@ main {
 .menu {
     background-color: var(--menu-color); /* Mesmo fundo que o header */
     height: 100%;
-    width: 400px;
+    width: 300px;
     padding: 5px 15px;
     margin: 0;
     border: 2.5px solid var(--border); /* Borda preta com 50% de transparência */
@@ -118,11 +118,10 @@ main {
 
 /* Rankingns */
 .rank{
-    display: fixed;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    width: 600px;
-    float: right;
+    width: 300px;
 }
 
 .ranking{
@@ -130,8 +129,7 @@ main {
     flex-direction: column;
     align-items: justify;
     background-color: var(--menu-color);
-    height: auto;
-    max-width: 70%;
+    min-width: 150px;
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 10px;
@@ -150,12 +148,14 @@ main {
     padding: 0px;
     list-style-position: inside;
     text-align: justify;
+    font-size: smaller;
 
 }
 .ranking li{
     margin: 0px;
     padding: 0px;
     list-style-position: inside;
+    font-size: smaller;
 }
 
 .rank button{
@@ -340,8 +340,6 @@ main {
     width: 100%;
     font-weight: bolder;
 }
-
-
 
 
 
