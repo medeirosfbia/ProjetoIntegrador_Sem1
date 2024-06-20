@@ -2,13 +2,19 @@
 
 main {
     display: flex;
-    flex-direction: row;
+    position: fixed;
+    width: 100%;
     height: 100vh; /* Garante que o main ocupe pelo menos toda a altura da viewport */
     box-sizing: border-box; /* Inclui o padding e a borda no cálculo da altura */
+}
+main.index{
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 /* Menu */
 .menu {
+    
     background-color: var(--menu-color); /* Mesmo fundo que o header */
     height: 100%;
     width: 300px;
@@ -130,6 +136,7 @@ main {
     align-items: justify;
     background-color: var(--menu-color);
     min-width: 150px;
+
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 10px;
@@ -343,3 +350,11 @@ main {
 
 
 
+/* IFRAME */
+
+iframe{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll !important;
+    
+}

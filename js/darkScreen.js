@@ -1,8 +1,10 @@
 window.site = Document.title
-function Title(rw, newSite){
+function Title(rwe, newSite){
     
-    if(rw == 'r'){
+    if(rwe == 'r'){
         return site
+    }else if(rwe == 'e'){
+        document.title = site 
     }else{
         site = newSite
     }
@@ -29,7 +31,7 @@ function DarkenHidden(site){
     }
     document.getElementsByClassName("visible")[0].style.visibility = 'hidden'
     document.getElementsByClassName("visible")[0].classList.remove('visible')
-    document.title = site
+    Title('e', site)
 
     for(el of els){
         el.classList.add("transition");

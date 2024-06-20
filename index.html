@@ -11,19 +11,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    
+
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <script src="bootstrap/js/bootstrap.js"></script>
     <script src="./js/toggleList.js"></script>
 
     <!-- LOGIN/SIGNIN -->
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
-    <script src="./bootstrap/js/bootstrap.js"></script>
     <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="js/darkScreen.js"></script>
- 
+
     <title>LogQuest | Home</title>
 </head>
 
@@ -35,20 +33,26 @@
             <h1 class="display-6 darken-title">Entre</h1>
             <p class="lead darken-text">Entrar permite que você curta e comente em outras postagens</p>
             <form action="">
-            <div class="darken-form">
-                <span class="input-group-text darken-icon" id="basic-addon1">@
-                <input type="text" class="form-control transition darken-input" placeholder="Digite seu usuário: *" aria-label="Username" aria-describedby="basic-addon1" required tabindex="1"></span>
-            </div>
-            <div class="darken-form">
-                <span class="input-group-text darken-icon" id="basic-addon1"><i class="bi bi-lock"></i>
-                <input type="password" class="form-control transition darken-input" placeholder="Digite sua senha: *" aria-label="Username" aria-describedby="basic-addon1" required tabindex="1"></span>
-            </div>
-            <p class="link transition" id="forgotPassword">Esqueci minha senha</p>
-            <button type="submit" class="btn btn-lg transition darken-button " onclick="DarkenHidden()">Acessar</button>
+                <div class="darken-form">
+                    <span class="input-group-text darken-icon" id="basic-addon1">@
+                        <input type="text" class="form-control transition darken-input"
+                            placeholder="Digite seu usuário: *" aria-label="Username" aria-describedby="basic-addon1"
+                            required tabindex="1"></span>
+                </div>
+                <div class="darken-form">
+                    <span class="input-group-text darken-icon" id="basic-addon1"><i class="bi bi-lock"></i>
+                        <input type="password" class="form-control transition darken-input"
+                            placeholder="Digite sua senha: *" aria-label="Username" aria-describedby="basic-addon1"
+                            required tabindex="1"></span>
+                </div>
+                <p class="link transition" id="forgotPassword">Esqueci minha senha</p>
+                <button type="submit" class="btn btn-lg transition darken-button "
+                    onclick="DarkenHidden()">Acessar</button>
             </form>
             <div class="bottom">
                 <p class="darken-text darken-inline">Caso você não possua conta: </p>
-                <button type="button" onclick="DarkenHidden(Title('r')); SignInVisible()" class="btn transition darken-button darken-small-button">Cadastre-se</button>
+                <button type="button" onclick="DarkenHidden(Title('r')); SignInVisible()"
+                    class="btn transition darken-button darken-small-button">Cadastre-se</button>
             </div>
 
         </div>
@@ -58,28 +62,33 @@
         <div class="darken-box">
             <p class="h5 X transition" onclick="DarkenHidden(Title('r'))">X</p>
             <h1 class="display-6 darken-title">Cadastre-se</h1>
-            
+
             <div class="darken-form">
-              <input type="checkbox" class="darken-input checkbox" id="btncheck1" autocomplete="off" required>
-              <label class="darken-text" for="btncheck1">Concordo com os <a href="">termos...</a></label>
+                <input type="checkbox" class="darken-input checkbox" id="btncheck1" autocomplete="off" required>
+                <label class="darken-text" for="btncheck1">Concordo com os <a href="">termos...</a></label>
             </div>
             <hr>
 
             <form action="">
                 <div class="darken-form">
                     <span class="input-group-text darken-icon" id="basic-addon1">@
-                    <input type="text" class="form-control transition darken-input" placeholder="Digite seu usuário: *" aria-label="Username" aria-describedby="basic-addon1" required tabindex="1"></span>
+                        <input type="text" class="form-control transition darken-input"
+                            placeholder="Digite seu usuário: *" aria-label="Username" aria-describedby="basic-addon1"
+                            required tabindex="1"></span>
                 </div>
                 <div class="darken-form">
                     <span class="input-group-text darken-icon" id="basic-addon1"><i class="bi bi-lock"></i>
-                    <input type="password" class="form-control transition darken-input" placeholder="Digite sua senha: *" aria-label="Password" aria-describedby="basic-addon1" required tabindex="1"></span>
+                        <input type="password" class="form-control transition darken-input"
+                            placeholder="Digite sua senha: *" aria-label="Password" aria-describedby="basic-addon1"
+                            required tabindex="1"></span>
                 </div>
-                
-                <button type="submit"  class="btn btn-lg transition darken-button ">Continuar</button>
+
+                <button type="submit" class="btn btn-lg transition darken-button ">Continuar</button>
             </form>
             <div class="bottom">
                 <p class="darken-text darken-inline">Caso você já possua conta: </p>
-                <button type="button" onclick="DarkenHidden(Title('r')); LoginVisible();" class="btn transition darken-button darken-small-button">Entrar</button>
+                <button type="button" onclick="DarkenHidden(Title('r')); LoginVisible();"
+                    class="btn transition darken-button darken-small-button">Entrar</button>
             </div>
 
         </div>
@@ -97,135 +106,39 @@
                 <button id="register-button" onclick="Title('w',document.title); SignInVisible();">Cadastrar</button>
             </div>
         </header>
-        <main>
+        <main class="index">
             <div class="menu">
                 <!-- Conteúdo do menu -->
-                <a href="/"><p class="button-select">Página Inicial</p></a>
-                <a href=""><p>Populares</p></a>
-                <a href="ajuda.html"><p>Dicas</p></a>
+                <a href="index.html" target="principal">
+                    <p class="button-select">Página Inicial</p>
+                </a>
+                <a href="">
+                    <p>Populares</p>
+                </a>
+                <a href="">
+                    <p>Dicas</p>
+                </a>
                 <div class="toggle-list">
                     <div class="toggle-header">Recursos</div>
                     <ul class="toggle-content">
-                        <a href=""><li>Sobre</li></a>
-                        <a href=""><li>Anuncie</li></a>
-                        <a href=""><li>Ajuda</li></a>
-                        <a href=""><li>Comunidades</li></a>
+                        <a href="">
+                            <li>Sobre</li>
+                        </a>
+                        <a href="">
+                            <li>Anuncie</li>
+                        </a>
+                        <a href="ajuda.html" onclick="Title('w','LogQuest | Ajuda'); " target="principal">
+                            <li>Ajuda</li>
+                        </a>
+                        <a href="">
+                            <li>Comunidades</li>
+                        </a>
                     </ul>
                 </div>
-                <button type="button">Baixe o Jogo</button>
-            </div>
-            <div class="main-content align-items-center">
-                <div class="post">
-                    <div class="header">
-                        <img src="./img/perfil.png" alt="">
-                        <p>Jorginho</p>
-                        <img src="./img/3ponto.png" alt="" class="tpoint">
-                    </div>
-                    <div class="content">
-                        <h4>Como passar de nível mais rápido?</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis pariatur voluptatibus
-                            adipisci perferendis obcaecati repellat ad animi libero dolorum, sapiente tempore illo dolor
-                            debitis consequatur praesentium? Officia dolorem explicabo quam?]</p>
-                    </div>
-                    <div class="interaction">
-                        <div class="like">
-                            <img src="./img/like.png" alt="">
-                            <p>2000</p>
-                        </div>
-                        <div class="comment">
-                            <img src="./img/comment.png" alt="">
-                            <p>200</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="post">
-                    <div class="header">
-                        <img src="./img/perfil.png" alt="">
-                        <p>George</p>
-                        <img src="./img/3ponto.png" alt="" class="tpoint">
-                    </div>
-                    <div class="content">
-                        <h4>Nova fase de labirinto criadaa!</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis pariatur voluptatibus
-                            adipisci perferendis obcaecati repellat ad animi libero dolorum, sapiente tempore illo dolor
-                            debitis consequatur praesentium? Officia dolorem explicabo quam?]</p>
-                        <img src="img/labirinto.png" alt="">
-                    </div>
-                    <div class="interaction">
-                        <div class="like">
-                            <img src="./img/like.png" alt="">
-                            <p>2000</p>
-                        </div>
-                        <div class="comment">
-                            <img src="./img/comment.png" alt="">
-                            <p>200</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="post">
-                    <div class="header">
-                        <img src="./img/perfil.png" alt="">
-                        <p>George</p>
-                        <img src="./img/3ponto.png" alt="" class="tpoint">
-                    </div>
-                    <div class="content">
-                        <h4>Nova fase de labirinto criadaa!</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis pariatur voluptatibus
-                            adipisci perferendis obcaecati repellat ad animi libero dolorum, sapiente tempore illo dolor
-                            debitis consequatur praesentium? Officia dolorem explicabo quam?]</p>
-                        <img src="img/labirinto.png" alt="">
-                    </div>
-                    <div class="interaction">
-                        <div class="like">
-                            <img src="./img/like.png" alt="">
-                            <p>2000</p>
-                        </div>
-                        <div class="comment">
-                            <img src="./img/comment.png" alt="">
-                            <p>200</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="moreM">
-                    <h1>Carregando mais mensagens</h1>
-                </div>
-
+                <button type="button"><a href="https://www.itch.io">Baixe o Jogo</a></button>
             </div>
 
-            <div class="rank">
-                <div class="ranking">
-                    <h2>Ranking Geral</h2>
-                    <ol>
-                        <li>Piasus - 2000 lgs</li>
-                        <li>Guexam - 1980 lgs</li>
-                        <li>Lumuel - 1970 lgs</li>
-                        <li>Vouses - 1968 lgs</li>
-                        <li>Olarus - 1965 lgs</li>
-                        <li>Zouseo - 1960 lgs</li>
-                        <li>Futaca - 1957 lgs</li>
-                        <li>Wuohar - 1952 lgs</li>
-                        <li>Wounta - 1943 lgs</li>
-                        <li>Hifeun - 1940 lgs</li>
-                    </ol>
-                </div>
-                <div class="ranking">
-                    <h2>Ranking Semana</h2>
-                    <ol>
-                        <li>Kutias</li>
-                        <li>Huxuku</li>
-                        <li>Futaca</li>
-                        <li>Guexan</li>
-                        <li>Zosali</li>
-                        <li>Tiumer</li>
-                        <li>Cokoen</li>
-                        <li>Tagoil</li>
-                        <li>Wounta</li>
-                        <li>Wuokau</li>
-                    </ol>
-                </div>
-                <button class="">Ver Ranking</button>
-            </div>
-
+            <iframe src="main.html" name="principal"></iframe>
         </main>
     </div>
 </body>
