@@ -346,6 +346,15 @@ main {
     height: auto;
 }
 
+.main-content .post .downloadLevel a{
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.main-content .post .downloadLevel a:hover{
+    background-color: var(--button-selected-color);
+}
+
 .main-content .post .downloadLevel .row .col-img{
     width: 50px;
     height: 50px;
