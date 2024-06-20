@@ -9,6 +9,7 @@
     --text-menu:#fff;
     --text-border: #000;
     --button-menu-color: #234782d8;
+    --button-selected-color: #0e4397;
     --button-color:#FFD75E;
 }
 
@@ -25,5 +26,5 @@ body, html{
 }
 
 .menu .button-select {
-    background-color: var(--button-menu-color);
+    background-color: var(--button-selected-color);
 }
