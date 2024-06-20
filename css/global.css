@@ -24,7 +24,7 @@ body, html{
     overflow-y: hidden;
 }
 
-body p, li, .toggle-header, h1, h2, h4, #login-button, #register-button, .accordion-header{
+body p, .button, li, .toggle-header, h1, h2, h4, #login-button, #register-button, .accordion-header{
     font-family: "Inter", sans-serif;
 }
 
