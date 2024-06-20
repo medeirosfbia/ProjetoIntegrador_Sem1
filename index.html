@@ -22,33 +22,36 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="js/darkScreen.js"></script>
 
+    <!-- Logado -->
+     <script src="js/logado.js"></script>
+
     <title>LogQuest | Home</title>
 </head>
 
 <body>
-
     <div id="login-content" class="darken">
         <div class="darken-box">
             <p class="h5 X transition" onclick="DarkenHidden(Title('r'))">X</p>
             <h1 class="display-6 darken-title">Entre</h1>
             <p class="lead darken-text">Entrar permite que você curta e comente em outras postagens</p>
-            <form action="">
+            <!-- <form action=""> -->
                 <div class="darken-form">
                     <span class="input-group-text darken-icon" id="basic-addon1">@
-                        <input type="text" class="form-control transition darken-input"
+                        <input type="text" class="form-control transition darken-input user" id="user"
                             placeholder="Digite seu usuário: *" aria-label="Username" aria-describedby="basic-addon1"
                             required tabindex="1"></span>
                 </div>
                 <div class="darken-form">
                     <span class="input-group-text darken-icon" id="basic-addon1"><i class="bi bi-lock"></i>
-                        <input type="password" class="form-control transition darken-input"
+                        <input type="password"
+                        id="password" class="form-control transition darken-input password"
                             placeholder="Digite sua senha: *" aria-label="Username" aria-describedby="basic-addon1"
                             required tabindex="1"></span>
                 </div>
                 <p class="link transition" id="forgotPassword">Esqueci minha senha</p>
                 <button type="submit" class="btn btn-lg transition darken-button "
-                    onclick="DarkenHidden()">Acessar</button>
-            </form>
+                    onclick="InputFilled()">Acessar</button>
+            <!-- </form> -->
             <div class="bottom">
                 <p class="darken-text darken-inline">Caso você não possua conta: </p>
                 <button type="button" onclick="DarkenHidden(Title('r')); SignInVisible()"
@@ -104,6 +107,10 @@
             <div class="button-container">
                 <button id="login-button" onclick="Title('w',document.title); LoginVisible();">Entrar</button>
                 <button id="register-button" onclick="Title('w',document.title); SignInVisible();">Cadastrar</button>
+            </div>
+            <div id="user-container">
+                <img src="img/perfiluser.png" alt="">
+                <p id="nameuser"></p>
             </div>
         </header>
         <main class="index">

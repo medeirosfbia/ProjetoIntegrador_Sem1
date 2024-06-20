@@ -21,11 +21,19 @@ function SignInVisible(){
     document.title = "LogQuest | Sign-in"
 }
 
-
-
 function DarkenHidden(site){
     var els = document.getElementsByClassName("transition");
-    
+    var users = document.getElementsByClassName("user");
+    var passwords = document.getElementsByClassName("password");
+
+    for(user of users){
+        user.value = ''
+    }
+
+    for (password of passwords){
+        password.value = ''
+    }
+
     for(el of els){
         el.classList.remove("transition");
     }
