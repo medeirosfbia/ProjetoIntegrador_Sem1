@@ -106,6 +106,7 @@ main.index{
     color: var(--text-menu);
 }
 
+.rank button,
 .menu button{
     background-color: var(--secondary-color);
     color: var(--text-border);
@@ -141,6 +142,7 @@ main.index{
     border-radius: 12px;
     padding: 10px;
     margin: 10px;
+    width: 180px;
 }
 
 .ranking h2{
@@ -166,15 +168,7 @@ main.index{
 }
 
 .rank button{
-    background-color: var(--secondary-color);
-    color: var(--text-border);
-    border: 2px solid var(--border);
-    border-radius: 8px;
-    padding: 10px 0;
-    margin-top: 2.5px;
     width: 150px;
-    font-weight: bolder;
-    cursor: pointer;
 }
 
 .rank button:hover{
@@ -348,6 +342,8 @@ main.index{
     font-weight: bolder;
 }
 
+
+/* DOWNLOAD */
 .main-content .post .downloadLevel{
     width: 350px;
     height: auto;
@@ -376,4 +372,10 @@ iframe{
     height: 100%;
     overflow-y: scroll !important;
     
+}
+
+/* DARK A */
+
+.menu a.dark-a {
+    color: black;
 }
