@@ -108,11 +108,17 @@
                 <button id="login-button" onclick="Title('w',document.title); LoginVisible();">Entrar</button>
                 <button id="register-button" onclick="Title('w',document.title); SignInVisible();">Cadastrar</button>
             </div>
-            <div id="user-container">
+            <div id="user-container" onclick="toggleDropdown()">
                 <img src="img/perfiluser.png" alt="">
                 <p id="nameuser"></p>
             </div>
         </header>
+        <div id="user-dropdown" class="dropdown-content">
+            <a href="#">Perfil</a>
+            <a href="#">Configurações</a>
+            <a href="#" onclick="logout()">Logout</a>
+        </div>
+
         <main class="index">
             <div class="menu">
                 <!-- Conteúdo do menu -->
