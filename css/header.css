@@ -2,17 +2,18 @@
 
 header {
     display: flex;
-    justify-content: space-between; /* Alinha os itens com espaço entre eles */
+    justify-content: space-between;
     background-color: var(--primary-color);
     align-items: center;
-    border-radius: 0 0 15px 15px; /* Apenas os cantos inferiores arredondados */
-    border: 1.5px solid var(--border); /* Borda preta com 50% de transparência */
-    border-top: none; /* Remove a borda superior */
-    padding: 15px 20px; /* Aumenta o padding para aumentar a altura */
+    border-radius: 0 0 15px 15px;
+    border: 1.5px solid var(--border);
+    border-top: none;
+    padding: 15px 20px;
     text-align: center;
-    height: 100px; /* Define uma altura específica */
-    overflow: hidden; /* Garante que o conteúdo extra não altere o tamanho */
-    box-sizing: border-box; /* Inclui o padding e a borda no cálculo da altura */
+    height: 100px;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
 }
 
 #header-logo{
@@ -83,4 +84,60 @@ header {
     padding: 5px 10px;
     font-size: 16px;
     cursor: pointer;
+}
+
+#user-container {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 15px;
+    margin-left: 15px;
+    margin-right: 25px;
+    border-radius: 25px;
+    border: 1px solid var(--border);
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+#user-container img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#user-container p {
+    font-size: 16px;
+    margin: auto;
+    color: var(--text);
+    font-weight: bold;
+}
+
+#user-dropdown {
+    display: none; /* Inicialmente escondido */
+    position: absolute;
+    top: 100px; /* Posiciona abaixo do header */
+    right: 25px; /* Alinha à direita do user-container */
+    background-color: var(--secondary-color);
+    min-width: 150px; /* Largura mínima do dropdown */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; /* Garante que o dropdown fique acima de outros elementos */
+    border-left: 1px solid var(--border); /* Borda esquerda */
+    border-right: 1px solid var(--border); /* Borda direita */
+    border-bottom: 1px solid var(--border); /* Borda inferior */
+    border-radius: 0 0 10px 10px; /* Bordas arredondadas na parte inferior */
+    overflow: hidden;
+}
+
+#user-dropdown a {
+    color: var(--text);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold; 
+    text-align: left;
+}
+
+#user-dropdown a:hover {
+    background-color: var(--primary-color);
 }

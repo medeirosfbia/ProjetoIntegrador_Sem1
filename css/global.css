@@ -17,18 +17,16 @@
 
 
 body, html{
+    font-family: "Inter", sans-serif !important;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 100%;
     box-sizing: border-box;
     background-color: var(--background-color);
-    overflow-y: hidden;
-}
-
-body p, .button, li, .toggle-header, h1, h2, h4, #login-button, #register-button, .accordion-header{
-    font-family: "Inter", sans-serif;
 }
 
 .menu .button-select {
     background-color: var(--button-selected-color);
 }
+
+

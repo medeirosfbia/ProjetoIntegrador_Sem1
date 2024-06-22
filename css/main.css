@@ -2,13 +2,19 @@
 
 main {
     display: flex;
-    flex-direction: row;
+    position: fixed;
+    width: 100%;
     height: 100vh; /* Garante que o main ocupe pelo menos toda a altura da viewport */
     box-sizing: border-box; /* Inclui o padding e a borda no cálculo da altura */
+}
+main.index{
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 /* Menu */
 .menu {
+    
     background-color: var(--menu-color); /* Mesmo fundo que o header */
     height: 100%;
     width: 300px;
@@ -100,6 +106,7 @@ main {
     color: var(--text-menu);
 }
 
+.rank button,
 .menu button{
     background-color: var(--secondary-color);
     color: var(--text-border);
@@ -130,10 +137,12 @@ main {
     align-items: justify;
     background-color: var(--menu-color);
     min-width: 150px;
+
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 10px;
     margin: 10px;
+    width: 180px;
 }
 
 .ranking h2{
@@ -159,15 +168,7 @@ main {
 }
 
 .rank button{
-    background-color: var(--secondary-color);
-    color: var(--text-border);
-    border: 2px solid var(--border);
-    border-radius: 8px;
-    padding: 10px 0;
-    margin-top: 2.5px;
     width: 150px;
-    font-weight: bolder;
-    cursor: pointer;
 }
 
 .rank button:hover{
@@ -341,6 +342,8 @@ main {
     font-weight: bolder;
 }
 
+
+/* DOWNLOAD */
 .main-content .post .downloadLevel{
     width: 350px;
     height: auto;
@@ -362,3 +365,17 @@ main {
 
 
 
+/* IFRAME */
+
+iframe{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll !important;
+    
+}
+
+/* DARK A */
+
+.menu a.dark-a {
+    color: black;
+}
