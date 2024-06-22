@@ -1,0 +1,160 @@
+.darken{
+    z-index: 10;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.378);
+    display: flex;
+    visibility: hidden;
+}
+.darken .darken-box{
+    background-image: linear-gradient(#0f1f38f0, #2A579Ef0);
+    width: 475px;
+    height: 500px;
+    border-radius: 50px;
+    margin: auto;
+    color: white;
+    display: block;
+    align-items: center;
+    
+}
+
+.darken .darken-box .darken-title{
+    
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 30px 0 20px 50px;
+}
+
+.darken .darken-box .darken-text{
+    margin: 10px 50px -10px 50px;
+    font-size: medium;
+}
+
+.darken .darken-box .X{
+    float: right;
+    margin: 30px 30px 0 0;
+    font-size: large;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 200;
+}
+.darken .darken-box .X:hover{
+    font-weight: 600;
+}
+
+.darken-icon{
+    background-color: transparent;
+    color: white;
+    font-size: x-large;
+    border: 0;
+    border-bottom: 3px solid white;
+}
+
+.darken-icon i{
+    width: 1em
+}
+
+.darken-input{
+    background-color: transparent;
+    font-size: x-large;
+    margin-left: 10px;
+    border: 0;
+}
+.darken-input::placeholder{
+    color: rgb(179, 179, 179);
+}
+.darken-input:focus{
+    background-color: transparent;
+}
+.darken-input:focus::placeholder{
+    color: white;
+}
+
+.darken-form{
+    align-items: center;
+    margin: 10px 50px 0 50px;
+}
+
+.link{
+    cursor: pointer;
+    padding-inline: 5px;
+    border: 1px solid #FFD75E;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 10px 50px 20px 50px;
+}
+.link:hover{
+    background-color: #FFD75E;
+    color: black;
+}
+
+.darken-button{
+    background-color: #FFD75E;
+    display: flex;
+    margin: auto;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: x-large;
+    width: auto;
+    border-radius: 50px;
+    padding-inline: 15%;
+    margin-top: 2rem;
+    
+
+}
+.darken-button:hover{
+    font-size: 27px;
+    padding-inline: 20%;
+    background-color: #FFD75E;
+    color: black;
+}
+
+.darken-small-button{
+    background-color: #FFD75E;
+
+    font-weight: 400;
+    text-transform: none;
+    font-size: medium;
+    width: auto;
+    margin-top: 0;
+    margin-left: -30px;
+    text-align: center;
+    border-radius: 50px;
+    padding-inline: 5%;
+}
+.darken-small-button:hover{
+    font-size: large;
+    padding-inline: 7%;
+    background-color: transparent;
+    color: #FFD75E;
+    border: 2px solid #FFD75E;
+
+}
+
+.darken-inline{
+    display: inline-block;
+    margin: 0;
+    margin-left: 50px;
+}
+
+/* CADASTRAR */
+.checkbox{
+    margin-right: -2rem;
+    margin-bottom: -1rem;
+}
+.checkbox:checked{
+    background-color: #000000f0;
+}
+
+.bottom{
+    display: flex;
+
+    margin-top: 2.5rem;
+}
+
+
+
+.transition{
+    transition: 0.2s;
+}
