@@ -46,3 +46,12 @@ function dropdownAlterScreen(){
     dropdown.style.display = "none"; // Esconde o dropdown ao fazer logout
 
 }
+
+function InputUsername() {
+    // Pegar o nome do usuário do elemento <p>
+    var name = document.getElementById('nameuser').textContent; 
+  
+    // Enviar o nome do usuário para o iframe
+    const iframe = document.getElementById('iframeConf').contentWindow;
+    iframe.postMessage(name, '*'); 
+  }

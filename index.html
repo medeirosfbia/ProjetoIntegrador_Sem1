@@ -30,6 +30,13 @@
 
     <title>LogQuest | Home</title>
 </head>
+<script>
+    window.addEventListener('message', (event) => {
+      if (event.data === 'logout') {
+        logout(); // Chame a função de logout
+      }
+    });
+  </script>
 
 <body>
     <div id="login-content" class="darken">
@@ -154,7 +161,7 @@
                 <button type="button"><a class="dark-a" href="https://www.itch.io">Baixe o Jogo</a></button>
             </div>
 
-            <iframe src="main.html" id="iframeConf" name="principal"></iframe>
+            <iframe src="main.html" id="iframeConf" name="principal" onload="InputUsername()"></iframe>
         </main>
     </div>
 </body>

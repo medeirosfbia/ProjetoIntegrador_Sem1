@@ -11,20 +11,24 @@
     window.addEventListener('message', (event) => {
       if (event.data) {
         document.getElementById('inputname').value = event.data;
+        console.log('Mensagem recebida:', event.data); 
       }
     });
-  
-    function fillUsernameInput() {
-      // Se o inputname já tiver um valor, não precisa fazer nada
-      if (document.getElementById('inputname').value !== '') return;
-  
-      // Enviar uma mensagem para o index.html para solicitar o nome de usuário
-      const iframe = window.parent.document.getElementById('iframeConf'); 
-      iframe.contentWindow.postMessage('requestUsername', '*'); 
+
+    window.addEventListener('message', (event) => {
+      if (event.data) {
+        document.getElementById('inputemail').value = event.data + "@gmail.com";
+        console.log('Mensagem recebida:', event.data); 
+      }
+    });
+
+    function triggerLogout() {
+        window.parent.postMessage('logout', '*');
+
+        // Altere o src do iframe para main.html
+        window.parent.document.getElementById('iframeConf').src = 'main.html'; 
     }
-  
-    // Chamar fillUsernameInput() quando a página carregar
-    window.onload = fillUsernameInput;
+
   </script>
     <body class="content-conf" onload="fillUsernameInput()">
         <div class="conf-options">
@@ -36,7 +40,7 @@
                 <h3>Username</h3>
                 <input type="text" name="username" id="inputname" placeholder="Nome será populado aqui" readonly>
                 <h3>Email</h3>
-                <input type="email">
+                <input type="email" name="username" id="inputemail" placeholder="Email será populado aqui" readonly>
                     <div class="notifica">
                         <label class="switch">
                             <input type="checkbox">
@@ -56,7 +60,7 @@
             <div class="footer">
                 <a href="" class="sup"><p class="sup">Suporte</p></a>
                 <p class="del">Excluir Conta</p>
-                <p class="logout" onclick="logout()">Sair/Logout</p>
+                <p class="logout" onclick="triggerLogout();">Sair/Logout</p>
             </div>
         </div>
     </body>
