@@ -19,7 +19,6 @@ function AllVisibles(){
 
 function LoginVisible(){
     DarkenHidden(Title('r'))
-    alert("LoginVisible")
 
     setTimeout(() =>{
     document.getElementById("login-content").style.visibility = 'visible'
@@ -43,7 +42,6 @@ function SignInVisible(){
 
 function DarkenHidden(site){
 
-    alert("DarkenHidden")
     var els = document.getElementsByClassName("transition");
     var users = document.getElementsByClassName("user");
     var passwords = document.getElementsByClassName("password");
