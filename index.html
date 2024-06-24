@@ -47,25 +47,18 @@
             <!-- <form action=""> -->
                 <div class="darken-form">
                     <span class="input-group-text darken-icon" id="basic-addon1">@
-                        <input type="text" class="form-control transition darken-input user" id="user"
-                            placeholder="Digite seu usuário: *" aria-label="Username" aria-describedby="basic-addon1"
-                            required tabindex="1"></span>
+                        <input type="text" class="form-control transition darken-input user" id="loginUser" placeholder="Digite seu usuário: *" aria-label="Username" aria-describedby="basic-addon1" required tabindex="1"></span>
                 </div>
                 <div class="darken-form">
                     <span class="input-group-text darken-icon" id="basic-addon1"><i class="bi bi-lock"></i>
-                        <input type="password"
-                        id="password" class="form-control transition darken-input password"
-                            placeholder="Digite sua senha: *" aria-label="Username" aria-describedby="basic-addon1"
-                            required tabindex="1"></span>
+                    <input type="password" id="loginPassword" class="form-control transition darken-input password" placeholder="Digite sua senha: *" aria-label="Username" aria-describedby="basic-addon1" required tabindex="1"></span>
                 </div>
                 <p class="link transition" id="forgotPassword">Esqueci minha senha</p>
-                <button type="submit" class="btn btn-lg transition darken-button "
-                    onclick="InputFilled()">Acessar</button>
+                <button type="submit" class="btn btn-lg transition darken-button " onclick="InputFilled('log')">Acessar</button>
             <!-- </form> -->
             <div class="bottom">
                 <p class="darken-text darken-inline">Caso você não possua conta: </p>
-                <button type="button" onclick="DarkenHidden(Title('r')); SignInVisible()"
-                    class="btn transition darken-button darken-small-button">Cadastre-se</button>
+                <button type="button" onclick="SignInVisible()" class="btn transition darken-button darken-small-button">Cadastre-se</button>
             </div>
 
         </div>
@@ -75,35 +68,48 @@
         <div class="darken-box">
             <p class="h5 X transition" onclick="DarkenHidden(Title('r'))">X</p>
             <h1 class="display-6 darken-title">Cadastre-se</h1>
-
-            <div class="darken-form">
-                <input type="checkbox" class="darken-input checkbox" id="btncheck1" autocomplete="off" required>
-                <label class="darken-text" for="btncheck1">Concordo com os <a href="">termos...</a></label>
-            </div>
             <hr>
-
-            <form action="">
-                <div class="darken-form">
-                    <span class="input-group-text darken-icon" id="basic-addon1">@
-                        <input type="text" class="form-control transition darken-input"
-                            placeholder="Digite seu usuário: *" aria-label="Username" aria-describedby="basic-addon1"
-                            required tabindex="1"></span>
+            <div id="signin-first-part">
+                <div class="darken-form" id="signin-checkbox">
+                    <input type="checkbox" class="darken-input checkbox" id="btncheck1" autocomplete="off" required>
+                    <label class="darken-text" for="btncheck1">Concordo com os <a href="">termos...</a></label>
+                    <hr>
                 </div>
-                <div class="darken-form">
-                    <span class="input-group-text darken-icon" id="basic-addon1"><i class="bi bi-lock"></i>
-                        <input type="password" class="form-control transition darken-input"
-                            placeholder="Digite sua senha: *" aria-label="Password" aria-describedby="basic-addon1"
-                            required tabindex="1"></span>
-                </div>
+                
 
-                <button type="submit" class="btn btn-lg transition darken-button ">Continuar</button>
-            </form>
-            <div class="bottom">
-                <p class="darken-text darken-inline">Caso você já possua conta: </p>
-                <button type="button" onclick="DarkenHidden(Title('r')); LoginVisible();"
-                    class="btn transition darken-button darken-small-button">Entrar</button>
+                <form action="" id="signin-form">
+                    <div class="darken-form">
+                        <span class="input-group-text darken-icon" id="basic-addon1">@
+                        <input type="email" class="form-control transition darken-input" id="signEmail" placeholder="Digite seu email: *" aria-label="Email" aria-describedby="basic-addon1" required tabindex="1"></span>
+                    </div>
+                    <div class="darken-form">
+                        <span class="input-group-text darken-icon" id="basic-addon1"><i class="bi bi-lock"></i>
+                        <input type="password" class="form-control transition darken-input" id="signPassword" placeholder="Digite sua senha: *" aria-label="Password" aria-describedby="basic-addon1" required tabindex="1"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-lg transition darken-button" onclick="InputFilled('sign1')">Continuar</button>
+                </form>
+                <div class="bottom" id="signin-bottom">
+                    <p class="darken-text darken-inline">Caso você já possua conta: </p>
+                    <button type="button" onclick="LoginVisible();" class="btn transition darken-button darken-small-button" >Entrar</button>
+                </div>
             </div>
 
+            <!-- SEGUNDA PARTE -->
+            <div class="" id="signin-second-part">
+                <p class="lead darken-text">Crie um nome de usuário	único e diga o ano que você nasceu. Você dever ter mais de 16 anos para continuar.</p>
+                <form action="">
+                    <div class="darken-form">
+                        <span class="input-group-text darken-icon" id="basic-addon1"><i class="bi bi-person-circle"></i>
+                        <input type="text" class="form-control transition darken-input" id="sign2Username" placeholder="Insira seu nome de usuário:" aria-label="Username" aria-describedby="basic-addon1" required tabindex="1"></span>
+                    </div>
+                    <div class="darken-form">
+                        <span class="input-group-text darken-icon" id="basic-addon1"><i class="bi bi-calendar-date"></i>
+                        <input type="date" class="form-control transition darken-input" id="sign2Birth" aria-label="ddmmaaaa" aria-describedby="basic-addon1" required tabindex="1"></span>
+                    </div>
+                    <button type="submit" class="btn btn-lg transition darken-button" onclick="InputFilled('sign2')">Confirmar</button>
+                </form>
+            </div>
         </div>
     </div>
 

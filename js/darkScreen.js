@@ -10,18 +10,39 @@ function Title(rwe, newSite){
     }
 }
 
+function AllVisibles(){
+    var els = document.getElementsByClassName("transition");
+    for(el of els){
+        el.style.visibility = 'inherit'
+    }
+}
+
 function LoginVisible(){
+    DarkenHidden(Title('r'))
+
+    setTimeout(() =>{
     document.getElementById("login-content").style.visibility = 'visible'
     document.getElementById("login-content").classList.add("visible")
     document.title = "LogQuest | Log-in"
+    AllVisibles()}, 310)
 }
 function SignInVisible(){
-    document.getElementById("signin-content").style.visibility = 'visible'
-    document.getElementById("signin-content").classList.add("visible")
-    document.title = "LogQuest | Sign-in"
+    DarkenHidden(Title('r'))
+
+    setTimeout(() =>{
+        document.getElementById("signin-content").style.visibility = 'visible'
+        document.getElementById("signin-content").classList.add("visible")
+        document.title = "LogQuest | Sign-in"
+        document.getElementById("signin-first-part").style.display = "block"
+        document.getElementById("signin-second-part").style.display = "none"
+        AllVisibles()
+    }, 310)
+    
 }
 
 function DarkenHidden(site){
+
+    
     var els = document.getElementsByClassName("transition");
     var users = document.getElementsByClassName("user");
     var passwords = document.getElementsByClassName("password");
@@ -35,16 +56,18 @@ function DarkenHidden(site){
     }
 
     for(el of els){
-        el.classList.remove("transition");
+        el.style.visibility = 'hidden'
     }
-    document.getElementsByClassName("visible")[0].style.visibility = 'hidden'
-    document.getElementsByClassName("visible")[0].classList.remove('visible')
-    Title('e', site)
 
-    for(el of els){
-        el.classList.add("transition");
-    }
+    setTimeout(() => {
+        document.getElementsByClassName("visible")[0].style.visibility = 'hidden'
+        document.getElementsByClassName("visible")[0].classList.remove('visible')
+        Title('e', site)
+    }, 300);
 }
 
 
-
+function SignInSecondPart(){
+    document.getElementById("signin-first-part").style.display = "none"
+    document.getElementById("signin-second-part").style.display = "block"
+}

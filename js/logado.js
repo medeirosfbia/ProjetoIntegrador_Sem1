@@ -4,18 +4,35 @@ function UserVisible() {
     document.getElementById('login-button').style.display = 'none';
 }
 
-function InputFilled() {
-    if (document.getElementById('user').value != '' && document.getElementById('password').value != '') {
-        UserVisible();
-        Username();
-        DarkenHidden(Title('r'));
+function InputFilled(type) {
+    if ((document.getElementById('loginUser').value != '' && document.getElementById('loginPassword').value != '') || (document.getElementById('btncheck1').checked == true && document.getElementById('signEmail').value != '' && document.getElementById('signPassword').value != '') || (document.getElementById('sign2Username').value != '' && document.getElementById('sign2Birth').value != '')) {
+        switch(type){
+            case 'log':
+                UserVisible();
+                Username();
+                DarkenHidden(Title('r'));
+                break
+
+            case 'sign1':
+                SignInSecondPart()
+                break
+
+            case 'sign2':
+                LoginVisible()
+                
+                break
+
+            default:
+                break
+        }
+
     } else {
         alert('Preencha todos os campos');
     }
 }
 
 function Username() {
-    var name = document.getElementById('user').value;
+    var name = document.getElementById('loginUser').value;
     document.getElementById('nameuser').innerHTML = name;
 }
 
@@ -55,3 +72,4 @@ function InputUsername() {
     const iframe = document.getElementById('iframeConf').contentWindow;
     iframe.postMessage(name, '*'); 
   }
+
