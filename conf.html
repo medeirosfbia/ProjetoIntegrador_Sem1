@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/conf.css">
+    <script src="js/logado.js"></script>
+    <title>LogQuest | Configurações</title>
+</head>
+<script>
+    window.addEventListener('message', (event) => {
+      if (event.data) {
+        document.getElementById('inputname').value = event.data;
+        console.log('Mensagem recebida:', event.data); 
+      }
+    });
+
+    window.addEventListener('message', (event) => {
+      if (event.data) {
+        document.getElementById('inputemail').value = event.data + "@gmail.com";
+        console.log('Mensagem recebida:', event.data); 
+      }
+    });
+
+    function triggerLogout() {
+        window.parent.postMessage('logout', '*');
+
+        // Altere o src do iframe para main.html
+        window.parent.document.getElementById('iframeConf').src = 'main.html'; 
+    }
+
+  </script>
+    <body class="content-conf" onload="fillUsernameInput()">
+        <div class="conf-options">
+            <div class="header">
+                <img src="img/imageAlter.png" alt="">
+                <p>Escolher Foto</p>
+            </div>
+            <div class="options">
+                <h3>Username</h3>
+                <input type="text" name="username" id="inputname" placeholder="Nome será populado aqui" readonly>
+                <h3>Email</h3>
+                <input type="email" name="username" id="inputemail" placeholder="Email será populado aqui" readonly>
+                    <div class="notifica">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                        <span>Notificações</span>
+                    </div>
+            </div>   
+        </div>
+        </div>
+        <div class="conf-menu">
+            <div class="header">
+                <p>Meu Perfil</p>
+                <p>Alterar Informações</p>
+                <p>Alterar Senha</p>
+            </div>
+            <div class="footer">
+                <a href="" class="sup"><p class="sup">Suporte</p></a>
+                <p class="del">Excluir Conta</p>
+                <p class="logout" onclick="triggerLogout();">Sair/Logout</p>
+            </div>
+        </div>
+    </body>
+</html>

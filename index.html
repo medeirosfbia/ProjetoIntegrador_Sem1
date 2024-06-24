@@ -25,8 +25,18 @@
     <!-- Logado -->
      <script src="js/logado.js"></script>
 
+     <!-- Configurações -->
+      <link rel="stylesheet" href="css/conf.css">
+
     <title>LogQuest | Home</title>
 </head>
+<script>
+    window.addEventListener('message', (event) => {
+      if (event.data === 'logout') {
+        logout(); // Chame a função de logout
+      }
+    });
+  </script>
 
 <body>
     <div id="login-content" class="darken">
@@ -120,9 +130,9 @@
             </div>
         </header>
         <div id="user-dropdown" class="dropdown-content">
-            <a href="#">Perfil</a>
-            <a href="#">Configurações</a>
-            <a href="#" onclick="logout()">Logout</a>
+            <a href="main.html" onclick="Title('w','LogQuest | Perfil'); Title('e');dropdownAlterScreen()" target="principal">Perfil</a>
+            <a href="conf.html" onclick="Title('w','LogQuest | Config'); Title('e');dropdownAlterScreen();setInputValue()" target="principal">Configurações</a>
+            <a href="main.html" onclick="logout()" target="principal">Logout</a>
         </div>
 
         <main class="index">
@@ -157,7 +167,7 @@
                 <button type="button"><a class="dark-a" href="https://www.itch.io">Baixe o Jogo</a></button>
             </div>
 
-            <iframe src="main.html" name="principal"></iframe>
+            <iframe src="main.html" id="iframeConf" name="principal" onload="InputUsername()"></iframe>
         </main>
     </div>
 </body>
