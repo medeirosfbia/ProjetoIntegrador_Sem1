@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/conf.css">
+    <script src="js/logado.js"></script>
+    <title>LogQuest | Configurações</title>
+</head>
+    <body class="content-conf" onload="fillUsernameInput()">
+        <div class="conf-options">
+            <div class="header">
+                <img src="img/imageAlter.png" alt="">
+                <p>Escolher Foto</p>
+            </div>
+            <div class="options">
+                <h3>Username</h3>
+                <input type="text" name="username" id="inputname" placeholder="Nome será populado aqui" readonly>
+                <h3>Email</h3>
+                <input type="email">
+                    <div class="notifica">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                        <span>Notificações</span>
+                    </div>
+            </div>   
+        </div>
+        </div>
+        <div class="conf-menu">
+            <div class="header">
+                <p>Meu Perfil</p>
+                <p>Alterar Informações</p>
+                <p>Alterar Senha</p>
+            </div>
+            <div class="footer">
+                <p class="">Suporte</p>
+                <p class="">Excluir Conta</p>
+                <p class="Logout" onclick="logout()">Sair/Logout</p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -40,3 +40,9 @@ function logout() {
     dropdown.style.display = "none"; // Esconde o dropdown ao fazer logout
     alert("Você foi desconectado");
 }
+
+function dropdownAlterScreen(){
+    var dropdown = document.getElementById("user-dropdown");
+    dropdown.style.display = "none"; // Esconde o dropdown ao fazer logout
+
+}

@@ -1,0 +1,182 @@
+@import "global.css";
+
+.content-conf {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* options */
+
+.conf-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Garante que o conteúdo comece a partir do topo */
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.conf-options .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 25px;
+    padding: 0px;
+    box-sizing: border-box; /* Garante que o padding seja incluído na largura total */
+}
+
+.conf-options .header img {
+    width: 250px;
+    height: 250px; /* Ajustado para ocupar toda a altura */
+}
+
+.conf-options .header p{
+    background-color: var(--secondary-color);
+    color: var(--text-menu);
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    margin: auto;
+    margin-left: 20px;
+    padding: 10px;
+    height: fit-content;
+    text-align: center;
+
+}
+
+.conf-options .header p:hover{
+    filter: brightness(0.8); /* Reduz o brilho em 20% para escurecer a cor */
+    cursor: pointer;
+}
+
+.conf-options .options{
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    margin-top: 25px;
+    width: 50%;
+    box-sizing: border-box; /* Garante que o padding seja incluído na largura total */
+}
+
+.conf-options .options .notifica {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-right: 10px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+
+/* Configurar */
+.conf-menu {
+    background-color: var(--menu-color); /* Mesmo fundo que o header */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+    width: 300px;
+    padding: 5px 15px;
+    margin: 0;
+    border: 2.5px solid var(--border); /* Borda preta com 50% de transparência */
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    box-sizing: border-box; /* Inclui o padding e a borda no cálculo da altura */
+}
+
+.conf-menu .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Garante que o conteúdo comece a partir do topo */
+    padding: 0px;
+    box-sizing: border-box; /* Garante que o padding seja incluído na largura total */
+
+}
+
+.conf-menu .header p{
+    background-color: var(--primary-color);
+    color: var(--text-menu);
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    margin: 5px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.conf-menu .header p:hover{
+    filter: brightness(0.8); /* Reduz o brilho em 20% para escurecer a cor */
+    cursor: pointer;
+}
+
+.conf-menu .footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Garante que o conteúdo comece a partir do topo */
+    padding: 5px;
+    margin-bottom: 85px;
+    box-sizing: border-box; /* Garante que o padding seja incluído na largura total */
+}
+
+.conf-menu .footer p{
+    background-color: var(--primary-color);
+    color: var(--text-menu);
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    margin: 5px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.conf-menu .footer p:hover{
+    filter: brightness(0.8); /* Reduz o brilho em 20% para escurecer a cor */
+    cursor: pointer;
+}
