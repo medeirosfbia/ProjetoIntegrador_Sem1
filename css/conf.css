@@ -55,9 +55,31 @@
     display: flex;
     flex-direction: column;
     align-items: justify;
-    margin-top: 25px;
+    margin-top: 0;
     width: 50%;
     box-sizing: border-box; /* Garante que o padding seja incluído na largura total */
+}
+
+.conf-options .options h3{
+    color: var(--text-border);
+    font-size: 23px;
+    margin: 5px;
+    padding: 0px 0px;
+    text-align: justify;
+
+}
+
+.conf-options .options input{
+    color: var(--text-menu);
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    margin: 2.5px;
+    padding: 5px;
+    text-align: justify;
+    height: 20px;
+    width: auto;
+
 }
 
 .conf-options .options .notifica {
@@ -179,4 +201,49 @@ input:checked + .slider:before {
 .conf-menu .footer p:hover{
     filter: brightness(0.8); /* Reduz o brilho em 20% para escurecer a cor */
     cursor: pointer;
+}
+
+.conf-menu .footer .sup{
+    background-color: transparent;
+    color: var(--text);
+    font-size: 16px;
+    border: none;
+    text-decoration: none;
+    margin: 5px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.conf-menu .footer .del{
+    background-color: var(--del-button);
+    color: var(--text-menu);
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px solid var(--border);
+    text-decoration: none;
+    margin: 5px;
+    padding: 10px 0;
+    text-align: center;
+    text-shadow:
+    -1px -1px 0 var(--text-border),
+    1px -1px 0 var(--text-border),
+    -1px 1px 0 var(--text-border),
+    1px 1px 0 var(--text-border);
+}
+
+.conf-menu .footer .logout{
+    background-color: var(--secondary-color);
+    color: var(--text-menu);
+    text-shadow:
+    -1px -1px 0 var(--text-border),
+    1px -1px 0 var(--text-border),
+    -1px 1px 0 var(--text-border),
+    1px 1px 0 var(--text-border);
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px solid var(--border);
+    text-decoration: none;
+    margin: 5px;
+    padding: 10px 0;
+    text-align: center;
 }
