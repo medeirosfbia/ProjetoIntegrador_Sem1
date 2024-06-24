@@ -42,7 +42,6 @@ function SignInVisible(){
 
 function DarkenHidden(site){
 
-    
     var els = document.getElementsByClassName("transition");
     var users = document.getElementsByClassName("user");
     var passwords = document.getElementsByClassName("password");
