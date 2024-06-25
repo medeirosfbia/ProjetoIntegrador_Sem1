@@ -57,6 +57,7 @@
 
 .darken-input{
     background-color: transparent;
+    color: white;
     font-size: x-large;
     margin-left: 10px;
     border: 0;
@@ -66,6 +67,7 @@
 }
 .darken-input:focus{
     background-color: transparent;
+    color: white;
 }
 .darken-input:focus::placeholder{
     color: white;

@@ -10,7 +10,7 @@ function InputFilled(type) {
             case 'log':
                 UserVisible();
                 Username();
-
+                DarkenHidden(Title('r'));
                 break
 
             case 'sign1':
